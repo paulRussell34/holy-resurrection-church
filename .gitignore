@@ -2,5 +2,7 @@
 Thumbs.db
 *.log
 preview-*.png
+live-*.png
+mobile-*.png
 current-site-full.png
 .playwright-mcp/
