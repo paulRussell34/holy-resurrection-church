@@ -39,6 +39,28 @@ document.addEventListener('click', e => {
 })();
 
 /* ============================================================
+   Maps picker
+   ============================================================ */
+document.querySelectorAll('.maps-picker__trigger').forEach(trigger => {
+  trigger.addEventListener('click', e => {
+    e.stopPropagation();
+    const menu = trigger.nextElementSibling;
+    const isOpen = !menu.hidden;
+    menu.hidden = isOpen;
+    trigger.setAttribute('aria-expanded', String(!isOpen));
+  });
+});
+
+document.addEventListener('click', () => {
+  document.querySelectorAll('.maps-picker__menu').forEach(menu => {
+    menu.hidden = true;
+  });
+  document.querySelectorAll('.maps-picker__trigger').forEach(t => {
+    t.setAttribute('aria-expanded', 'false');
+  });
+});
+
+/* ============================================================
    Back to top
    ============================================================ */
 const backToTop = document.getElementById('back-to-top');

@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=1">
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 
@@ -150,7 +150,13 @@
           <p>We meet at 280 N Haywood Street, Suite A in downtown Waynesville. Street parking is available nearby.</p>
           <p class="text-muted">280 N Haywood St Suite A<br>Waynesville, NC 28786</p>
           <div class="mt-md">
-            <a href="contact.html" class="btn btn--primary">Get Directions</a>
+            <div class="maps-picker">
+              <button class="btn btn--primary maps-picker__trigger" aria-haspopup="true" aria-expanded="false">Get Directions</button>
+              <div class="maps-picker__menu" hidden>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=280+N+Haywood+St+Suite+A,+Waynesville,+NC+28786" target="_blank" rel="noopener" class="maps-picker__option">Google Maps</a>
+                <a href="https://maps.apple.com/?daddr=280+N+Haywood+St+Suite+A,+Waynesville,+NC+28786" target="_blank" rel="noopener" class="maps-picker__option">Apple Maps</a>
+              </div>
+            </div>
           </div>
         </div>
         <div class="map-wrap fade-in">
@@ -206,6 +212,6 @@
 
   <button class="back-to-top" id="back-to-top" aria-label="Back to top">&#8679;</button>
 
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
