@@ -74,6 +74,16 @@ const observer = new IntersectionObserver(entries => {
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.1 });
+}, {
+  threshold: 0,
+  rootMargin: '0px 0px 120px 0px'
+});
 
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Fallback: if observer stalls (slow devices, JS late), reveal everything after 1.5s
+setTimeout(() => {
+  document.querySelectorAll('.fade-in:not(.fade-in--visible)').forEach(el => {
+    el.classList.add('fade-in--visible');
+  });
+}, 1500);
