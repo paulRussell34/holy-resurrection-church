@@ -2,8 +2,9 @@
    Design System
    ============================================================ */
 :root {
-  --color-primary:      #6B1E30;
-  --color-primary-dark: #4A1220;
+  --color-primary:          #6B1E30;
+  --color-primary-dark:     #4A1220;
+  --color-primary-dark-rgb: 74, 18, 32;
   --color-accent:       #C5A55A;
   --color-accent-dark:  #A8893E;
   --color-bg:           #F7F3EE;
@@ -240,7 +241,7 @@ p:last-child { margin-bottom: 0; }
 
 .hero--home {
   background-image:
-    linear-gradient(to bottom, rgba(18, 32, 58, 0.78), rgba(18, 32, 58, 0.88)),
+    linear-gradient(to bottom, rgba(var(--color-primary-dark-rgb), 0.78), rgba(var(--color-primary-dark-rgb), 0.88)),
     url('images/hero.jpg');
   background-size: cover;
   background-position: center;
@@ -252,7 +253,7 @@ p:last-child { margin-bottom: 0; }
 .hero--page {
   padding: var(--space-lg) 0;
   background-image:
-    linear-gradient(to bottom, rgba(18, 32, 58, 0.85), rgba(18, 32, 58, 0.92)),
+    linear-gradient(to bottom, rgba(var(--color-primary-dark-rgb), 0.85), rgba(var(--color-primary-dark-rgb), 0.92)),
     url('images/hero.jpg');
   background-size: cover;
   background-position: center;
