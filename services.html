@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Service schedule and visitor information for Holy Resurrection Orthodox Church in Waynesville, NC.">
+
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; form-action https://formspree.io; img-src 'self' data: https:; frame-src https://www.google.com https://maps.google.com; connect-src 'self' https://formspree.io;">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <title>Services &amp; Schedule | Holy Resurrection Orthodox Church</title>
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">Holy Resurrection</a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item nav__item--has-dropdown">
+          <a href="about.html" class="nav__link">About <span class="nav__caret">&#9660;</span></a>
+          <ul class="nav__dropdown">
+            <li><a href="about.html#faith"  class="nav__dropdown-link">Our Faith</a></li>
+            <li><a href="about.html#clergy" class="nav__dropdown-link">Our Clergy</a></li>
+          </ul>
+        </li>
+        <li class="nav__item nav__item--has-dropdown">
+          <a href="services.html" class="nav__link">Services <span class="nav__caret">&#9660;</span></a>
+          <ul class="nav__dropdown">
+            <li><a href="services.html#schedule"       class="nav__dropdown-link">Schedule</a></li>
+            <li><a href="services.html#what-to-expect" class="nav__dropdown-link">What to Expect</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="contact.html" class="nav__link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page hero -->
+  <section class="hero hero--page">
+    <div class="container hero__inner">
+      <h1 class="hero__title fade-in">Services &amp; Schedule</h1>
+      <p class="hero__subtitle fade-in">All Are Welcome to Attend</p>
+    </div>
+  </section>
+
+  <!-- Schedule -->
+  <section class="section" id="schedule">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-header__eyebrow">Worship</p>
+        <h2 class="section-header__title">Service Schedule</h2>
+        <div class="section-header__divider"></div>
+        <p class="section-header__text">
+          Times will be updated shortly. Contact us at
+          <a href="mailto:holyresurrectionuocusa@gmail.com">holyresurrectionuocusa@gmail.com</a>
+          or call <a href="tel:+18287759122">828-775-9122</a> to confirm the current schedule.
+        </p>
+      </div>
+
+      <div class="fade-in">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Day</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Divine Liturgy</td>
+              <td class="day">Sunday</td>
+              <td class="time">Time TBD</td>
+            </tr>
+            <tr>
+              <td>Vespers</td>
+              <td class="day">Saturday</td>
+              <td class="time">Time TBD</td>
+            </tr>
+            <tr>
+              <td>Feast Day Liturgy</td>
+              <td class="day">As scheduled</td>
+              <td class="time">See parish calendar</td>
+            </tr>
+            <tr>
+              <td>Akathist / Paraklesis</td>
+              <td class="day">As scheduled</td>
+              <td class="time">See parish calendar</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="text-center mt-md fade-in">
+        <a href="contact.html" class="btn btn--primary">Questions? Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="split">
+        <div class="fade-in">
+          <p class="section-header__eyebrow">Location</p>
+          <h2 class="split-heading">Where We Meet</h2>
+          <div class="divider-flush"></div>
+          <p>
+            We gather at 280 N Haywood Street, Suite A in downtown Waynesville. The space is on the ground
+            floor and accessible from the street. Street parking and a public lot are both nearby.
+          </p>
+          <p class="text-muted">
+            <strong>Meeting address:</strong><br>
+            280 N Haywood St Suite A<br>
+            Waynesville, NC 28786
+          </p>
+          <p class="text-muted">
+            <strong>Mailing address:</strong><br>
+            229 Georgia Ave.<br>
+            Waynesville, NC 28786
+          </p>
+        </div>
+        <div class="map-wrap fade-in">
+          <iframe
+            src="https://maps.google.com/maps?q=280+N+Haywood+St+Suite+A+Waynesville+NC+28786&output=embed"
+            height="340"
+            title="Holy Resurrection Orthodox Church location"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What to expect -->
+  <section class="section" id="what-to-expect">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-header__eyebrow">First Visit</p>
+        <h2 class="section-header__title">What to Expect</h2>
+        <div class="section-header__divider"></div>
+        <p class="section-header__text">
+          If you have never been to an Orthodox service before, here is a brief guide to help you feel at home.
+        </p>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="card fade-in">
+          <h3 class="card__title">The Service Is Sung</h3>
+          <p>
+            Orthodox worship is entirely sung or chanted - there is no organ or piano. The human voice is the
+            instrument of the Church. You do not need to sing along; simply listen and take it in.
+          </p>
+        </div>
+        <div class="card fade-in">
+          <h3 class="card__title">Icons and Prayer</h3>
+          <p>
+            You will see icons throughout the church. The faithful bow and make the sign of the cross at various
+            points in the service. Visitors are welcome to observe without participating in these gestures.
+          </p>
+        </div>
+        <div class="card fade-in">
+          <h3 class="card__title">Holy Communion</h3>
+          <p>
+            Holy Communion is reserved for baptized and chrismated Orthodox Christians who have prepared
+            through prayer and fasting. Non-Orthodox visitors are welcome to receive a blessing from the priest
+            during communion.
+          </p>
+        </div>
+        <div class="card fade-in">
+          <h3 class="card__title">Dress and Conduct</h3>
+          <p>
+            Modest dress is appreciated, though there is no strict requirement for first-time visitors.
+            Children are welcome and encouraged to be present for the liturgy. We are a small community,
+            so you will not be lost in a crowd.
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center mt-md fade-in">
+        <p class="text-muted">Have more questions? We are glad to help.</p>
+        <a href="contact.html" class="btn btn--primary mt-sm">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote -->
+  <section class="quote-band">
+    <div class="container">
+      <p class="quote-band__text fade-in">
+        "Come and see."
+      </p>
+      <p class="quote-band__attribution fade-in">- John 1:46</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div>
+          <p class="footer__brand">Holy Resurrection Orthodox Church</p>
+          <p class="footer__text">A Mission Outreach of the UOC-USA<br>(Ecumenical Patriarchate)</p>
+        </div>
+
+        <div>
+          <p class="footer__heading">Pages</p>
+          <a href="index.html"    class="footer__link">Home</a>
+          <a href="about.html"    class="footer__link">About</a>
+          <a href="services.html" class="footer__link">Services</a>
+          <a href="contact.html"  class="footer__link">Contact</a>
+        </div>
+
+        <div>
+          <p class="footer__heading">Contact</p>
+          <p class="footer__text">280 N Haywood St Suite A<br>Waynesville, NC 28786</p>
+          <a href="tel:+18287759122"                        class="footer__link">828-775-9122</a>
+          <a href="mailto:holyresurrectionuocusa@gmail.com" class="footer__link">holyresurrectionuocusa@gmail.com</a>
+        </div>
+
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Holy Resurrection Orthodox Church. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">&#8679;</button>
+
+  <script src="script.js?v=1"></script>
+</body>
+</html>

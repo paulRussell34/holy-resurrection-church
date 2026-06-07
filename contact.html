@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Holy Resurrection Orthodox Church in Waynesville, NC. Send us a message, find our address, or give us a call.">
+
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; form-action https://formspree.io; img-src 'self' data: https:; frame-src https://www.google.com https://maps.google.com; connect-src 'self' https://formspree.io;">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <title>Contact | Holy Resurrection Orthodox Church</title>
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">Holy Resurrection</a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item nav__item--has-dropdown">
+          <a href="about.html" class="nav__link">About <span class="nav__caret">&#9660;</span></a>
+          <ul class="nav__dropdown">
+            <li><a href="about.html#faith"  class="nav__dropdown-link">Our Faith</a></li>
+            <li><a href="about.html#clergy" class="nav__dropdown-link">Our Clergy</a></li>
+          </ul>
+        </li>
+        <li class="nav__item nav__item--has-dropdown">
+          <a href="services.html" class="nav__link">Services <span class="nav__caret">&#9660;</span></a>
+          <ul class="nav__dropdown">
+            <li><a href="services.html#schedule"       class="nav__dropdown-link">Schedule</a></li>
+            <li><a href="services.html#what-to-expect" class="nav__dropdown-link">What to Expect</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="contact.html" class="nav__link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page hero -->
+  <section class="hero hero--page">
+    <div class="container hero__inner">
+      <h1 class="hero__title fade-in">Contact Us</h1>
+      <p class="hero__subtitle fade-in">We Would Love to Hear from You</p>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section class="section">
+    <div class="container">
+      <div class="split split--wide-left">
+
+        <!-- Form -->
+        <div class="fade-in">
+          <p class="section-header__eyebrow">Send a Message</p>
+          <h2 class="split-heading mb-md">Get in Touch</h2>
+
+          <!--
+            To activate this form:
+            1. Create a free account at formspree.io
+            2. Create a new form and copy your form ID
+            3. Replace YOUR_FORMSPREE_ID in the action URL below
+          -->
+          <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required placeholder="Jane Smith">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required placeholder="jane@example.com">
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Question about services">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="Your message here..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">Send Message</button>
+            <p class="form-notice">We typically respond within one to two business days.</p>
+          </form>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="fade-in">
+          <div class="contact-info">
+            <p class="contact-info__heading">Meeting Address</p>
+            <p class="contact-info__text">
+              280 N Haywood St Suite A<br>
+              Waynesville, NC 28786
+            </p>
+
+            <p class="contact-info__heading">Mailing Address</p>
+            <p class="contact-info__text">
+              229 Georgia Ave.<br>
+              Waynesville, NC 28786
+            </p>
+
+            <p class="contact-info__heading">Phone</p>
+            <a href="tel:+18287759122" class="contact-info__link">828-775-9122</a>
+
+            <p class="contact-info__heading">Email</p>
+            <a href="mailto:holyresurrectionuocusa@gmail.com" class="contact-info__link">
+              holyresurrectionuocusa@gmail.com
+            </a>
+
+            <p class="contact-info__heading">Parish Priest</p>
+            <p class="contact-info__text">Fr. John Cummings</p>
+            <a href="mailto:wncorthodox@att.net" class="contact-info__link">wncorthodox@att.net</a>
+          </div>
+
+          <div class="map-wrap">
+            <iframe
+              src="https://maps.google.com/maps?q=280+N+Haywood+St+Suite+A+Waynesville+NC+28786&output=embed"
+              height="260"
+              title="Holy Resurrection Orthodox Church location"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote -->
+  <section class="quote-band">
+    <div class="container">
+      <p class="quote-band__text fade-in">
+        "We embrace everyone who hungers for love, comfort, fulfillment, and hope."
+      </p>
+      <p class="quote-band__attribution fade-in">- Holy Resurrection Orthodox Church</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div>
+          <p class="footer__brand">Holy Resurrection Orthodox Church</p>
+          <p class="footer__text">A Mission Outreach of the UOC-USA<br>(Ecumenical Patriarchate)</p>
+        </div>
+
+        <div>
+          <p class="footer__heading">Pages</p>
+          <a href="index.html"    class="footer__link">Home</a>
+          <a href="about.html"    class="footer__link">About</a>
+          <a href="services.html" class="footer__link">Services</a>
+          <a href="contact.html"  class="footer__link">Contact</a>
+        </div>
+
+        <div>
+          <p class="footer__heading">Contact</p>
+          <p class="footer__text">280 N Haywood St Suite A<br>Waynesville, NC 28786</p>
+          <a href="tel:+18287759122"                        class="footer__link">828-775-9122</a>
+          <a href="mailto:holyresurrectionuocusa@gmail.com" class="footer__link">holyresurrectionuocusa@gmail.com</a>
+        </div>
+
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Holy Resurrection Orthodox Church. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">&#8679;</button>
+
+  <script src="script.js?v=1"></script>
+</body>
+</html>
